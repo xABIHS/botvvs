@@ -9,8 +9,8 @@ class Program
         "Новый \"Фейри\" с ароматом конопли - мой посуду весело!",
         "Начальник отдела входит в кабинет и орёт на сотрудников: - Я же сказал: во время работы курить запрещается! На что получает ответ: - А кто работает?"
     };
-    private static List<string> badWordPhrases = new List<string>() { "" };
-    private static List<string> badWords = new List<string>() { "" };
+    private static List<string> badWordPhrases = new List<string>() { "ты гений?",  "Ты лучший!", "Зачем ты это сделал?", "ээээ... ват э Sigma?", "ты пупс", "нет, я не пупс" };
+    private static List<string> badWords = new List<string>() { "кек", "лол" };
 
     private static void Main(string[] args)
     {
