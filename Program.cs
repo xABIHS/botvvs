@@ -27,15 +27,14 @@ class Program
             {
                 if (badWords.Contains(i))
                 {
-                    int random = 0;
-                    Console.WriteLine(badWordPhrases[random]);
-                    continue; // я не помню как рандом в c# без unity делается
+                    Console.WriteLine(badWordPhrases[new Random().Next(0, badWordPhrases.Count)]);
+                    continue;
                 }
             }
 
             string response = cmd switch
             {
-                "расскажи шутку" => jokes[0], //тут тоже рандом должен быть
+                "расскажи шутку" => jokes[new Random().Next(0, jokes.Count)],
                 "пока" => $"До свидания, {name}"
             };
 
